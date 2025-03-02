@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Áp dụng với tất cả */
+:root{
+    --primary-color: lightpink;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right, lightpink, lightblue)
+}
+
+.card{
+    margin: 120px auto;
+    width: 320px;
+    height: 500px;;
+    background: #272d40;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.card_cart {
+    position: absolute;
+    left: 0;
+    top: 15px;
+
+}
+
+.card_cart, .card_heart{
+    font-size: 25px;
+    left: unset;
+    right: 20px;
+    top: 15px;
+}
+
+.card_img{
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.card_img img{
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_title, .card_price{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card_title{
+    color: var(--primary-color);
+}
+
+.card_size, .card_color{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card_size span{
+    padding: 2px 5px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.card_color span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.card_color--pink{
+    background: pink;
+}
+
+.card_color--green{
+    background: lightgreen;
+}
+
+.card_color--white{
+    background: white;
+}
+
+.card_action button{
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card:hover .card_img{
+    transform: translateY(-100px) scale(1.25, 1.25);
+}
+
+.card:hover .card_title, .card:hover .card_price{
+    transform: translate(0px, -70px);
+}
+
+.card_size{
+    margin-top: 150px;
+}
+
+.card_size, .card_color, .card_action{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .card_size, .card:hover .card_color, .card:hover .card_action {
+    visibility: visible;
+    opacity: 100;
+}
+
+.card:hover .card_size{
+    margin-top: -30px;
+}
