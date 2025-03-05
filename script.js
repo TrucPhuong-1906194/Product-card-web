@@ -12,5 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {                     
         alert("You've added this item to your cart!");
         window.open("https://khonggiangomsuviet.vn/5-dong-men-truyen-thong-lam-nen-thuong-hieu-men-gom-bat-trang/", "_blank", "width=800,height=600") //Mở một liên kết (URL) mới "_blank" cho phép trang mở ở tab mới;
                                                                                                                             //Hoạt động sau khi thao tác với alert
+                                                                                                                            //Mở một cửa sổ popup nhỏ thay vì tab mới
     });
 });
