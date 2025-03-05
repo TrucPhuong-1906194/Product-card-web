@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {                     
 
     addCartButton.addEventListener("click", function () {// Tương tự như trên, nhưng lần này là nút "Add Cart" được click
         alert("You've added this item to your cart!");
-        window.open("https://khonggiangomsuviet.vn/5-dong-men-truyen-thong-lam-nen-thuong-hieu-men-gom-bat-trang/", "_blank")
+        window.open("https://khonggiangomsuviet.vn/5-dong-men-truyen-thong-lam-nen-thuong-hieu-men-gom-bat-trang/", "_blank", "width=800,height=600") //Mở một liên kết (URL) mới "_blank" cho phép trang mở ở tab mới;
+                                                                                                                            //Hoạt động sau khi thao tác với alert
     });
 });
